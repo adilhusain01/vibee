@@ -34,8 +34,8 @@ app.use(compression());
 // CORS configuration
 app.use(cors({
     origin: process.env.NODE_ENV === 'production'
-        ? ['https://vibe-games.vercel.app', 'http://localhost:5173']
-        : ['http://localhost:5173', 'https://www.vibe-games.vercel.app'],
+        ? ['https://vibe-games.vercel.app', 'http://localhost:5173', 'https://vibe-gamez.vercel.app']
+        : ['http://localhost:5173', 'https://www.vibe-games.vercel.app', 'https://vibe-gamez.vercel.app'],
     credentials: true,
     optionsSuccessStatus: 200
 }));
