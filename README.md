@@ -37,14 +37,14 @@ Both games support AI content generation from:
 
 - **No wallet required (eg. Metamask)** - Social login with non-custodial wallets via Privy
 - **AI-powered content generation** - Create games instantly from multiple sources
-- **Live on mainnet** - Real token rewards on Somnia blockchain
+- **Live on mainnet** - Real token rewards on Flow blockchain
 - **Mobile responsive** - Full functionality across all devices
 
 ---
 
 ## Tech Stack
 
-- Smart contracts on Somnia blockchain for transparent reward distribution
+- Smart contracts on Flow blockchain for transparent reward distribution
 - React + Tailwind CSS frontend. NodeJs for backend. MongoDB for DB
 - Gemini API for AI content generation
 - Privy for wallet abstraction

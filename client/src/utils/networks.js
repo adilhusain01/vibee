@@ -1,8 +1,8 @@
 const networks = {
     "0x1": "Mainnet",
     "0x4f5e0c": "Electroneum",
-    "0xc488": "Somnia Testnet",
-    "0x13a7": "Somnia Mainnet"
+    "0xc488": "Flow Testnet",
+    "0x13a7": "Flow Mainnet"
 }
 
 // Network configuration based on environment
@@ -10,30 +10,30 @@ const getNetworkConfig = () => {
     const isProduction = import.meta.env.VITE_NODE_ENV === 'production';
 
     if (isProduction) {
-        // Somnia Mainnet configuration
+        // Flow Mainnet configuration
         return {
-            chainId: '0x13a7', // 5031 in hex
-            chainName: 'Somnia Mainnet',
-            rpcUrls: ['https://somnia-rpc.publicnode.com'],
+            chainId: '0x2eb', // 5031 in hex
+            chainName: 'Flow Mainnet',
+            rpcUrls: ['https://mainnet.evm.nodes.onflow.org'],
             nativeCurrency: {
-                name: 'SOMI',
-                symbol: 'SOMI',
+                name: 'FLOW',
+                symbol: 'FLOW',
                 decimals: 18,
             },
-            blockExplorerUrls: ['https://somniate.me/'],
+            blockExplorerUrls: ['https://www.flowscan.io'],
         };
     } else {
-        // Somnia Testnet configuration
+        // Flow Testnet configuration
         return {
-            chainId: '0xc488', // 50312 in hex
-            chainName: 'Somnia Testnet',
-            rpcUrls: ['https://dream-rpc.somnia.network'],
+            chainId: '0x221', // 50312 in hex
+            chainName: 'Flow Testnet',
+            rpcUrls: ['https://testnet.evm.nodes.onflow.org'],
             nativeCurrency: {
-                name: 'STT',
-                symbol: 'STT',
+                name: 'FLOW',
+                symbol: 'FLOW',
                 decimals: 18,
             },
-            blockExplorerUrls: ['https://shannon-explorer.somnia.network/'],
+            blockExplorerUrls: ['https://testnet.flowscan.io'],
         };
     }
 };
@@ -45,4 +45,3 @@ const getCurrentCurrency = () => {
 };
 
 export { networks, getNetworkConfig, getCurrentCurrency };
-  
