@@ -77,6 +77,6 @@ Transform how Web3 communities engage, learn, and distribute value - making ever
 
 ---
 
-## Mainnet Deployed Contract Address
+## Flow Testnet Deployed Contract Address
 
-0x69579be58808F847a103479Bb023E9c457127369
+0x091ec285e5879E2e3bBA843519f31B585633104E
